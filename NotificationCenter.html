@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotificationCenter</title>
+
+    <link rel="stylesheet" href="NotificationCenter.css">
+
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.js"></script>
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.data.js"></script>
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.commodel.js"></script>
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.serializer.js"></script>
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.net.js"></script>
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.resources.js"></script>
+
+
+    <script src="https://lc.dbazure.cn/dbfxui/dbfx.web.theme.js"></script>
+    <script src="https://lc.dbazure.cn/dbfxui/dbfx.web.controls.js"></script>
+    <script src="https://lc.dbazure.cn/dbfxui/dbfx.web.listcontrols.js"></script>
+    <script src="https://lc.dbazure.cn/dbfxui/dbfx.web.navigation.js"></script>
+    <script src="https://lc.dbazure.cn/dbfx/dbfx.app.js"></script>
+
+
+    <script src="NotificationCenter.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="div" style="height: 200px;width: 600px;border: 1px solid #ffaa30"></div>
+
+<div class="test"></div>
+
+<script>
+
+    var divE = document.getElementById("div");
+    divE.style.paddingTop = "30px";
+    divE.style.paddingLeft = "30px";
+
+    var nc = new DBFX.Web.Controls.NotificationCenter();
+    divE.appendChild(nc.VisualElement);
+
+
+    var arr = [1,2,3,4,5,[6,7,8,9]];
+
+    var arr01 = [1,2,3,4,5,6,7,8,9];
+
+    function ffff(arr01) {
+        // for(var i=0;i<arr01.length;i++){
+        //     if(i==4){
+        //         return;
+        //     }
+        //     console.log(arr01[i]);
+        // }
+
+        // arr01.forEach(function (value,index) {
+        //     if(index==2){
+        //         return;
+        //     }
+        //     console.log(value);
+        // });
+
+
+        var a = 5;
+        while (a>=0){
+
+            if(a==3){
+                a--;
+                break;
+
+            }
+            console.log(arr01[a]);
+            a--;
+        }
+
+        console.log("ffff");
+
+    }
+
+
+    ffff(arr01);
+
+    // var count = 100;
+    // arr01.forEach(function (value) {
+    //     count -= 10;
+    //     if(count == 50){
+    //         console.log(count);
+    //     }
+    // })
+
+    // arr.forEach(function (i) {
+    //     console.log(i);
+    //     if(i==5){
+    //         console.log("forEach该退出了");
+    //         return false;
+    //     }
+    //     console.log("forEachend");
+    // });
+    //
+    // for(var i = 0;i<arr.length;i++){
+    //     console.log(arr[i]);
+    //     if(arr[i]==3){
+    //         console.log("for该退出了");
+    //         continue;
+    //     }
+    //     console.log("forend");
+    // }
+
+    // arr.forEach(function (value, index, array) {
+    //     try{
+    //         if(index == 3){
+    //             return;
+    //             console.log("return")
+    //
+    //         }
+    //
+    //         console.log("value:"+value);
+    //         console.log("index:"+index);
+    //         console.log("array:"+array);
+    //     }catch (error){
+    //         console.log(error);
+    //     }
+    //
+    //
+    // });
+
+
+
+
+</script>
+</body>
+</html>

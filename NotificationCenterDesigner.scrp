@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<screenpart BackgroundColor="Transparent" HorizonScrollbar="Hidden" Margin="0px" Padding="0px" Serializer="DBFX.Serializer.FormPartSerializer">
+
+  <xns>
+    <ns k="wc"  n="DBFX.Web.Controls" />
+    <ns k="lc"  n="DBFX.Web.LayoutControls" />
+    <ns k="dv"  n="DBFX.Design" />
+  </xns>
+
+  <controls>
+       <c T="wc:Panel"  Shadow="none" BorderWidth="0px" Margin="2px 0px 2px 0px" MinWidth="230px" >
+           <controls>
+
+           <c T="wc:BreakLine" />
+           <c T="wc:Label" Text="显示图片:" Margin="4px 2px 2px 16px" Float="left"/>
+           <c T="dv:TypeEditors.ImageChooseButton" Display="block"  Margin="2px 14px 2px 16px" BindProperty="ImageUrl" />
+
+           <c T="wc:BreakLine" />
+           <c T="wc:Label" Text="搜索结果展示页面:" Margin="4px 2px 2px 16px" Float="left"/>
+           <c T="wc:TextBox" Display="block" Height="26px" Margin="2px 14px 2px 16px" DataBindings="{&quot;Path&quot;:&quot;ResultResourceUri&quot;,&quot;Mode&quot;:&quot;OneWay&quot;,&quot;Source&quot;:&quot;&quot;}" />
+           </controls>
+       </c>
+
+    <c T="dv:TypeEditors.EventList" Name="EventListBox" Text="事件处理程序" Shadow="node" Margin="2px 0px 2px 0px" MinWidth="64px">
+    </c>
+  </controls>
+</screenpart>
